@@ -3,18 +3,21 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>co.com.controller</groupId>
-	<artifactId>controller</artifactId>
+	<groupId>co.com.services</groupId>
+	<artifactId>services</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>controller</name>
-	<description>All entities on project</description>
+	<name>services</name>
+	<description>All business logic</description>
 	
 	<parent>
 		<groupId>co.com.api</groupId>
 		<artifactId>api</artifactId>
 	    <version>0.0.1-SNAPSHOT</version>
 	</parent>
-
+	
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
 	<dependencies>
 		<dependency>
   			<groupId>co.com.entity</groupId>
@@ -35,10 +38,16 @@
   		</dependency>
   		
   		<dependency>
-			<groupId>org.modelmapper</groupId>
-			<artifactId>modelmapper</artifactId>
-			<version>0.7.6</version>
-		</dependency>
+  			<groupId>co.com.repository</groupId>
+  			<artifactId>repository</artifactId>
+  			<version>0.0.1-SNAPSHOT</version>
+  		</dependency>
+  		
+  		<dependency>
+  			<groupId>org.modelmapper</groupId>
+  			<artifactId>modelmapper</artifactId>
+  			<version>0.7.6</version>
+  		</dependency>
   		
 	</dependencies>
 

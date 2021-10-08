@@ -32,16 +32,10 @@
   			<artifactId>common</artifactId>
   			<version>0.0.1-SNAPSHOT</version>
  	 	</dependency>
- 	 	
+ 	 	 	 	
  	 	<dependency>
-  			<groupId>co.com.entity</groupId>
-  			<artifactId>entity</artifactId>
-  			<version>0.0.1-SNAPSHOT</version>
- 	 	</dependency>
- 	 	
- 	 	<dependency>
-  			<groupId>co.com.controller</groupId>
-  			<artifactId>controller</artifactId>
+  			<groupId>co.com.services</groupId>
+  			<artifactId>services</artifactId>
   			<version>0.0.1-SNAPSHOT</version>
   		</dependency>
 	
@@ -55,6 +49,8 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+	
+		
 	</dependencies>
 
 	<build>
@@ -66,7 +62,7 @@
                     <dependency>
                         <groupId>org.springframework</groupId>
                         <artifactId>springloaded</artifactId>
-                        <version>${spring-loaded.version}</version>
+                        <version>{spring-loaded.version}</version>
                     </dependency>
                 </dependencies>
             </plugin>

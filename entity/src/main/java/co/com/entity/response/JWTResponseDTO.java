@@ -5,6 +5,8 @@ import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 
+import co.com.entity.entities.UserEntity;
+
 public class JWTResponseDTO extends User {
 	
 	private static final long serialVersionUID = 6674077300313869696L;
@@ -12,6 +14,9 @@ public class JWTResponseDTO extends User {
 	public JWTResponseDTO(String expositorname, String password, Collection<? extends GrantedAuthority> authorities) {
 		super(expositorname, password, authorities);
 	}
+	
+	private UserEntity user;
+	
 	
 	/* Include UserEntity */
 	
@@ -26,6 +31,13 @@ public class JWTResponseDTO extends User {
 	}
 	
 	/* Add user getters and setters */
+	public UserEntity getUser() {
+		return user;
+	}
+	
+	public void setUser (UserEntity user) {
+		this.user = user;
+	}
 
 }
 

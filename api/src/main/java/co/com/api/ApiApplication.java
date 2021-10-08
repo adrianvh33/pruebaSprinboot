@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableAutoConfiguration
-@EntityScan(basePackages = {"co.com.entity"})
+@EntityScan(basePackages = {"co.com.entities"})
 @ComponentScan({"co.com.*"})
 @SpringBootApplication
 public class ApiApplication {
@@ -19,3 +19,4 @@ public class ApiApplication {
 		SpringApplication.run(ApiApplication.class, args);
 	}
 }
+

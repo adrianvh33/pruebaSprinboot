@@ -48,7 +48,7 @@ public class LoginFilter extends AbstractAuthenticationProcessingFilter {
 		} catch (EncryptionException ex) {
 			ex.printStackTrace();
 		}
-		UsernamePasswordAuthenticationToken login =  new UsernamePasswordAuthenticationToken( user.getEmail(),  passwordEncrypted,  Collections.emptyList());
+		UsernamePasswordAuthenticationToken login =  new UsernamePasswordAuthenticationToken( user.getCorreo(),  passwordEncrypted,  Collections.emptyList());
         return getAuthenticationManager().authenticate(login);
     }
 
